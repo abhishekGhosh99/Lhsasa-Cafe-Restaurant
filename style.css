@@ -1,0 +1,135 @@
+@import url("https://fonts.googleapis.com/css2?family=Belanosima:wght@400;600;700&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  /* box-sizing: border-box; */
+  font-family: "Belanosima", sans-serif;
+  /* background-color: rgb(26, 26, 26); */
+  color: #fff;
+}
+nav {
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 15vh;
+  /* border-bottom: 0.1px solid #fff; */
+  background-color: rgb(26, 26, 26);
+}
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+/* .sticky + main {
+  padding-top: 60px;
+} */
+.nav-left {
+  width: 50%;
+}
+.nav-left img {
+  width: 180px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 8rem;
+}
+.nav-right {
+  width: 50%;
+}
+.nav-right ul {
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+}
+nav ul li {
+  list-style: none;
+  margin: 0px 50px;
+}
+nav ul li::after {
+  content: "";
+  width: 0%;
+  height: 2px;
+  background: #ffffff;
+  display: block;
+  margin: auto;
+  transition: 0.2s;
+}
+nav ul li:hover::after {
+  width: 100%;
+}
+.nav-right ul li a {
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+}
+main {
+  min-height: 100vh;
+  width: 100%;
+  object-fit: cover;
+  background: rgba(0, 0, 0, 0.86) url(background.jpg);
+  background-blend-mode: darken;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
+.hero-text {
+  font-size: 4rem;
+  text-align: center;
+  padding: 10rem 0 0 0;
+  letter-spacing: 4px;
+}
+.hero-text > div:nth-child(2) {
+  margin-top: -1.4rem;
+}
+#element {
+  color: rgb(255, 255, 255);
+}
+/*----------------- Footer start-------------- */
+
+footer {
+  background-color: rgb(37, 37, 37);
+}
+
+.footer {
+  text-align: center;
+  color: white;
+  padding: 40px 0 20px 0;
+}
+.footer h1 {
+  padding: 0 0 2rem 0;
+  font-size: x-large;
+  font-weight: 500;
+  word-spacing: 4px;
+}
+.icons {
+  padding-bottom: 2rem;
+  color: #fff;
+  font-size: 20px;
+}
+.icons i {
+  padding: 0 20px;
+}
+/* .col-md {
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 0 3rem 0;
+}
+.col-md li {
+  margin: 0 1rem 0 1rem;
+  font-size: 15px;
+}
+.col-md a {
+  text-decoration: none;
+  color: white;
+}
+.links {
+  display: flex;
+} */
+.footer-center {
+  color: white;
+  padding-bottom: 2rem;
+}
+/******************** Footer End *****************/
